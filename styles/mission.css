@@ -1,0 +1,100 @@
+/* === Mission Section Heading === */
+.mission-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  /* Gradient shimmer text effect */
+  background: linear-gradient(90deg, #00ff99, #00ccff, #00ff99);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shimmer 5s linear infinite;
+
+  /* Spacing */
+  margin-bottom: -0.5rem;
+  margin-top: 4rem;
+  padding: 0 1rem;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* === Mission Gallery Layout === */
+.mission-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+/* === Individual Mission Card Styling === */
+.mission-card {
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  backdrop-filter: blur(3px); /* Glassmorphism effect */
+  border-radius: 1.5rem;
+  width: 300px;
+  text-align: center;
+  padding: 2rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.5s ease-out; /* Smooth hover animation */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Card hover scale effect */
+.mission-card:hover {
+  transform: scale(1.05);
+}
+
+/* Mission card image */
+.mission-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular image */
+  margin: 0 auto 1.2rem;
+  box-shadow: 0 0 10px rgba(0, 255, 128, 0.3); /* Glowing image border */
+}
+
+/* Mission card title */
+.mission-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+/* Optional shimmer utility class (reusable) */
+.shimmer {
+  background: linear-gradient(90deg, #00ff99, #00ccff, #00ff99);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+/* Mission card description text */
+.mission-card p {
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* === Shimmer Animation Keyframes === */
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* === Responsive Styling for Mobile === */
+@media (max-width: 768px) {
+  .mission-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}

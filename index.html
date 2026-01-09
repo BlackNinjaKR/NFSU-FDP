@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets character encoding to UTF-8 for universal character support -->
+    <meta name="author" content="Anik Dasgupta">
+    <meta name="description" content="Static informational website for NFSU Faculty Development Program, showcasing program details, schedules, speakers, resources, and contact information using a clean, responsive and accessible web design.">
+    <link rel="icon" href="assets/Favicon.png" type="image">
+    <title>Faculty Development Program - NFSU</title>
+    <!-- The title of the web page (appears in the browser tab) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper scaling and responsiveness on different screen sizes -->
+
+    <link rel="stylesheet" href="styles/background.css">
+    <link rel="stylesheet" href="styles/introscreen.css">
+    <link rel="stylesheet" href="styles/warning.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/mission.css">
+    <link rel="stylesheet" href="styles/team.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Links to the external CSS file that defines styles for background, loader, etc. -->
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Loads the Particles.js library for animated particle backgrounds -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Loads Swiper.js's stylesheet — commonly used for responsive sliders/carousels -->
+
+</head>
+<body>
+
+    <!-- Particles background canvas element -->
+    <div id="particles-js"></div>
+    <!-- This div is where Particles.js renders the animated background -->
+
+<!-- ===============================
+     Intro Screen Section
+     Displays a centered logo and intro image on initial load
+================================== -->
+<div id="intro-screen">
+    <div class="intro-container">
+        <!-- Company or app logo image -->
+        <img src="assets/Logo.png" alt="Logo" class="intro-logo" />
+        
+        <!-- Decorative or title image used as the intro "splash text" -->
+        <img src="assets/SplashText.png" alt="Text" class="intro-text" />
+    </div>
+</div>
+
+
+<!-- ===============================
+     Fullscreen Loader
+     Displays animated loader cubes while content is being prepared
+================================== -->
+<div id="loader">
+    <!-- Container for loader animation -->
+    <div class="container">
+        <!-- Each cube is a bouncing loader block -->
+        <div class="cube"><div class="cube__inner"></div></div>
+        <div class="cube"><div class="cube__inner"></div></div>
+        <div class="cube"><div class="cube__inner"></div></div>
+    </div>
+</div>
+
+
+<!-- ===============================
+     Navigation Bar (Header)
+     Provides anchor links to different sections of the site
+================================== -->
+<header id="navbar" class="finisher-header">
+    <nav class="navbar-container">
+
+        <!-- Logo on the left side of the navbar linking to the hero section -->
+        <div class="navbar-logo">
+            <a href="#hero">
+                <img src="assets/Logo.png" alt="L;stner Logo" class="navbar-logo-img" />
+            </a>
+        </div>
+
+        <!-- Main menu with section links -->
+        <ul class="navbar-menu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#mission">Mission & Vision</a></li>
+            <li><a href="#team">Our Team</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+<!-- ===============================
+     Hero Section
+     Landing area with tagline and key message
+================================== -->
+<section id="hero" class="hero-section">
+    <div class="hero-content">
+        <div class="text-content">
+            <!-- Current logo-based headline and tagline -->
+            <div class="hero-logo-text">
+                <h1 class="logo-text">NFSU Faculty Development Program</h1>
+                <p class="tagline">09:00am IST on 23rd January, 2026</p>
+            </div>
+
+            <!-- Supporting line reinforcing the brand mission -->
+            <!-- <p class="subheading">wewewew</p><br> -->
+
+            <!-- Button linking to About Us section -->
+            <a href="#about" class="hero-button">Register Now</a>
+        </div>
+
+        <!-- Right side illustration for visual appeal -->
+        <!-- <div class="logo-content">
+            <img src="assets/hero-illustration.png" alt="Logo" class="hero-logo" />
+        </div> -->
+    </div>
+</section>
+
+
+<section class="about-section" id="about">
+    <div class="about-card">
+        <div class="about-text">
+            <h2 class="about-heading">Lorem Ipsum?</h2>
+            <p>
+                Lorem ipsum dolor sit amet
+                <br><br>
+                Lorem ipsum dolor sit amet
+                <br><br>
+                Lorem ipsum dolor sit amet
+            </p>
+        </div>
+
+        <!-- Supporting illustration to enhance understanding -->
+        <div class="about-image">
+            <img src="assets/about-illustration.png" alt="Listening Illustration">
+        </div>
+    </div>
+</section>
+
+
+<!-- ===============================
+     Mission Statement
+     Short header for the mission section
+================================== -->
+<section id="mission">
+    <h2 class="mission-heading">Our Mission</h2>
+</section>
+
+
+<!-- ===============================
+     Mission Gallery
+     Highlights three pillars of the mission in card format
+================================== -->
+<section class="mission-gallery">
+    <!-- Mission Card 1 -->
+    <div class="mission-card">
+        <img src="assets/mission.png" alt="Mission 1">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <!-- Mission Card 2 -->
+    <div class="mission-card">
+        <img src="assets/mission.png" alt="Mission 2">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <!-- Mission Card 3 -->
+    <div class="mission-card">
+        <img src="assets/mission.png" alt="Mission 3">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+</section>
+
+<!-- Vision Section Heading -->
+<h2 class="mission-heading">Our Vision for Tomorrow</h2>
+
+<!-- Vision Gallery showing 5 thematic cards -->
+<section class="mission-gallery" id="vision">
+
+  <!-- Vision Card 1: Accessibility and inclusiveness -->
+  <div class="mission-card">
+    <img src="assets/vision.png" alt="Mission 1">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+  </div>
+
+  <!-- Vision Card 2: Healing through presence, even in silence -->
+  <div class="mission-card">
+    <img src="assets/vision.png" alt="Mission 2">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+  </div>
+
+  <!-- Vision Card 3: Emotional safety and safe environments -->
+  <div class="mission-card">
+    <img src="assets/vision.png" alt="Mission 3">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+  </div>
+
+  <!-- Vision Card 4: Combating loneliness on a systemic level -->
+  <div class="mission-card">
+    <img src="assets/vision.png" alt="Mission 3">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+  </div>
+
+  <!-- Vision Card 5: Valuing every voice, especially the quiet ones -->
+  <div class="mission-card">
+    <img src="assets/vision.png" alt="Mission 3">
+        <h3 class="shimmer">Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+  </div>
+  
+</section>
+
+<section class="team-section">
+  <!-- Section Heading -->
+  <h2 class="team-heading" id="team">Our Team for Lorem Ipsum</h2>
+
+  <!-- Carousel wrapper to allow side-scrolling of cards -->
+  <div class="carousel-container">
+
+    <!-- Left navigation arrow -->
+    <button class="nav left" onclick="scrollCarousel(-1)">&#10094;</button>
+
+    <!-- Carousel track containing individual team member cards -->
+    <div class="carousel-track" id="teamCarousel">
+
+      <!-- ============================
+           Individual Team Member Card
+           ============================ -->
+
+      <div class="card" data-original="true">
+        <!-- Shine effect overlay for card hover -->
+        <div class="shine-effect"></div>
+
+        <!-- Team member avatar -->
+        <img src="assets/Team/Anik Dasgupta.png" class="avatar" />
+
+        <!-- Member name with shimmer animation -->
+        <h3 class="name shimmer-text">Lorem Ipsum</h3>
+
+        <!-- Role or title of the member -->
+        <p class="title">Lorem @ Ipsum</p>
+
+        <!-- Short member bio or placeholder -->
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+
+      <!-- Card 2: Anik Dasgupta -->
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <img src="assets/Team/Anik Dasgupta.png" class="avatar" />
+        <h3 class="name shimmer-text">Lorem Ipsum</h3>
+        <p class="title">Lorem @ Ipsum</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+
+      <!-- Card 3: Sirjan Kaur Pahuja -->
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <img src="assets/Team/Anik Dasgupta.png" class="avatar" />
+        <h3 class="name shimmer-text">Lorem Ipsum</h3>
+        <p class="title">Lorem @ Ipsum</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+
+      <!-- Card 4: Dewan Aviral -->
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <img src="assets/Team/Anik Dasgupta.png" class="avatar" />
+        <h3 class="name shimmer-text">Lorem Ipsum</h3>
+        <p class="title">Lorem @ Ipsum</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+
+      <!-- Card 4: Stephen Sarkar -->
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <img src="assets/Team/Anik Dasgupta.png" class="avatar" />
+        <h3 class="name shimmer-text">Lorem Ipsum</h3>
+        <p class="title">Lorem @ Ipsum</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+      </div>
+    </div>
+
+    <!-- Right navigation arrow -->
+    <button class="nav right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+<!-- Testimonial Section Heading -->
+  <h2 class="team-heading" id="team">Testimonials</h2>
+
+<!-- Vision Gallery showing 5 thematic cards -->
+<section class="mission-gallery" id="vision">
+
+  <!-- Vision Card 1: Accessibility and inclusiveness -->
+  <div class="testimonial-card">
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="description">Lorem ipsum</p>
+      </div>
+  </div>
+
+  <!-- Vision Card 2: Healing through presence, even in silence -->
+  <div class="testimonial-card">
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="description">Lorem ipsum</p>
+      </div>
+  </div>
+
+  <!-- Vision Card 3: Emotional safety and safe environments -->
+  <div class="testimonial-card">
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="description">Lorem ipsum</p>
+      </div>
+  </div>
+
+  <!-- Vision Card 4: Combating loneliness on a systemic level -->
+  <div class="testimonial-card">
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="description">Lorem ipsum</p>
+      </div>
+  </div>
+
+  <!-- Vision Card 5: Valuing every voice, especially the quiet ones -->
+  <div class="testimonial-card">
+      <div class="card" data-original="true">
+        <div class="shine-effect"></div>
+        <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="description">Lorem ipsum</p>
+      </div>
+  </div>
+  
+</section>
+
+<!-- ===========================================
+     JavaScript Includes & Initialization Logic
+============================================ -->
+
+<!-- Library: ScrollReveal -->
+<!-- Used for scroll-triggered animations -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Background particle or visual effects -->
+<script src="scripts/background.js"></script>
+
+<!-- Controls intro screen behavior like fading out after load -->
+<script src="scripts/introscreen.js"></script>
+
+<!-- Animations or logic related to the hero section (e.g., text, buttons) -->
+<script src="scripts/hero.js"></script>
+
+<!-- Handles navigation bar interactions (e.g., scroll shrink, active highlighting) -->
+<script src="scripts/navbar.js"></script>
+
+<!-- Script controlling About Us section (could include animations or counters) -->
+<script src="scripts/about.js"></script>
+
+<!-- Enables team carousel behavior (likely handles left/right scroll) -->
+<script src="scripts/team.js"></script>
+
+<!-- Swiper.js library: Enables slider/carousel functionality -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Duplicate — optional to keep if needed for compatibility -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+
+<!-- Disable right-click context menu on the entire document -->
+<!-- Useful for content protection or cleaner UX -->
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+</script>
+
+
+</body>
+</html>
