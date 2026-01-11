@@ -34,6 +34,7 @@
   left: 0;
   width: 125px;
   height: 125px;
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.3)); /* Glow effect */
   opacity: 0;                    /* Start invisible */
   animation:
     fadeIn 1s ease forwards,           /* Fade in immediately */
@@ -51,6 +52,7 @@
   width: 125px;
   height: 125px;
   opacity: 0;                    /* Start invisible */
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1)); /* Glow effect */
   animation:
     textEnterDown 1s ease forwards 1.2s, /* Slide down and fade in */
     textExitDown 1s ease forwards 3.5s;  /* Slide down more and fade out */

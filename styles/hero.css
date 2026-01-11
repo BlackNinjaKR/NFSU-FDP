@@ -83,14 +83,15 @@
   font-weight: bold; /* Emphasize text */
   margin: 1.5rem auto 0;
   text-decoration: none;
-  box-shadow: 0 0 12px #00ff99; /* Glowy shadow */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+  transition: background-color 0.3s ease, transform 0.5s ease; /* Smooth hover effects */
 }
 
 /* Hover effect for button */
 .hero-button:hover {
   background-color: #00e68a; /* Slightly darker green */
   transform: scale(1.05); /* Subtle zoom */
+  box-shadow: 0 0 7px #00ff99; /* Glowy shadow */
+  transition: background-color 0.3s ease, transform 0.5s ease, box-shadow 0.5s ease; /* Smooth hover effects */
 }
 
 /* =====================
@@ -158,8 +159,8 @@
   .hero-logo-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align left on desktop */
-    /* align-items: center; */
+    /* align-items: flex-start; Align left on desktop */
+    align-items: center;
     margin-bottom: 1rem;
   }
 
