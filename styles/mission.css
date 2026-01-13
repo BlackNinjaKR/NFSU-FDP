@@ -1,7 +1,7 @@
 /* === Mission Section Heading === */
 .mission-heading {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
 
   /* Gradient shimmer text effect */
@@ -15,7 +15,7 @@
 
   /* Spacing */
   margin-bottom: -0.5rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
   padding: 0 1rem;
 
   font-family: 'Montserrat', sans-serif;

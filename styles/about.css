@@ -1,6 +1,6 @@
 /* Container for the entire About section */
 .about-section {
-  padding: 3rem 3rem; /* Spacing around the section */
+  padding: 3rem 0rem; /* Spacing around the section */
   background: transparent; /* No background color, allows backdrop to show */
   display: flex; /* Flex container for centering */
   justify-content: center; /* Horizontally center content */
@@ -13,7 +13,7 @@
   justify-content: space-between; /* Space between image and text */
   flex-direction: column-reverse; /* Stack vertically on small screens, image below text */
   align-items: center; /* Center items horizontally */
-  gap: 2rem; /* Gap between image and text */
+  gap: 1rem; /* Gap between image and text */
   background: rgba(0, 0, 0, 0.2); /* Semi-transparent background for glass effect */
   backdrop-filter: blur(1px); /* Blur background behind the card */
   padding: 1.5rem; /* Inner spacing */
@@ -41,7 +41,7 @@
 
 /* Sub-heading text */
 .about-text h2 {
-  font-size: 3rem; /* Large subheading */
+  font-size: 2.4rem; /* Large subheading */
   color: #00ff99; /* Bright green color */
   margin-bottom: 1rem; /* Space below heading */
 }

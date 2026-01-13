@@ -72,6 +72,8 @@
   height: 60px;
   width: auto;
   transition: transform 0.5s ease;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* === Hover Animation for Logo === */
