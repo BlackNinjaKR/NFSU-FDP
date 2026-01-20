@@ -94,4 +94,10 @@
   .navbar-menu {
     display: none; /* Hide menu on small screens */
   }
+
+  .navbar-logo-img {
+    height: 50px; /* Smaller logo on small screens */
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
