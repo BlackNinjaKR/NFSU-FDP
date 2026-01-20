@@ -167,3 +167,40 @@
   filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
   transition: filter 0.3s ease;
 }
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  margin-bottom: 1.5rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.schedule-table th {
+  font-weight: 700;
+  background: rgba(0, 255, 153, 0.15);
+  color: #00ff99;
+}
+
+.schedule-table tr:hover {
+  background: rgba(0, 255, 153, 0.08);
+}
+
+.break-row {
+  background: rgba(255, 255, 255, 0.06);
+  color: #cfcfcf;
+}
+
+.break-row td {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+}
