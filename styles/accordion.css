@@ -1,6 +1,6 @@
-/* Container for the entire About section */
-.about-section {
-  padding: 3rem 3rem; /* Spacing around the section */
+/* Container for the entire accordion section */
+.accordion-section {
+  padding: 3rem 0rem; /* Spacing around the section */
   background: transparent; /* No background color, allows backdrop to show */
   display: flex; /* Flex container for centering */
   justify-content: center; /* Horizontally center content */
@@ -8,12 +8,12 @@
 }
 
 /* Main card container that holds text and image */
-.about-card {
+.accordion-card {
   /* display: flex; Flex layout for image and text alignment */
-  justify-content: space-between; /* Space between image and text */
+  /* justify-content: space-between; Space between image and text */
   /* flex-direction: column-reverse; Stack vertically on small screens, image below text */
   align-items: center; /* Center items horizontally */
-  gap: 2rem; /* Gap between image and text */
+  /* gap: 1rem; Gap between image and text */
   background: rgba(0, 0, 0, 0.2); /* Semi-transparent background for glass effect */
   backdrop-filter: blur(1px); /* Blur background behind the card */
   padding: 1.5rem; /* Inner spacing */
@@ -26,7 +26,7 @@
 }
 
 /* Gradient animated heading text */
-.about-heading {
+.accordion-heading {
   font-size: 3rem; /* Large font size */
   font-weight: 900; /* Extra bold text */
   background: linear-gradient(90deg, #00ff99, #00ccff, #00ff99); /* Color-changing gradient */
@@ -40,49 +40,51 @@
 }
 
 /* Sub-heading text */
-.about-text h2 {
-  font-size: 3rem; /* Large subheading */
+.accordion-text h2 {
+  font-size: 2.4rem; /* Large subheading */
   color: #00ff99; /* Bright green color */
   margin-bottom: 1rem; /* Space below heading */
 }
 
-/* Paragraph text in About section */
-.about-text p {
+/* Paragraph text in accordion section */
+.accordion-text p {
   font-size: 1.25rem; /* Slightly larger than normal text */
   color: #ffffff; /* White color for readability */
   text-align: left; /* Align left for readability */
-  margin-bottom: 1rem; /* Space below paragraph */
+  margin-bottom: 1.5rem; /* Space below paragraph */
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6; /* Improved line spacing for readability */
 }
 
 /* Image container */
-.about-image {
-  float: left; /* Take available space */
-  max-width: 100%; /* Restrict image container size */
-  margin: 0 1.5rem 1rem 0;
-  border-radius: 1.5rem;
-  shape-outside: inset(0);
+.accordion-image {
+  flex: 1; /* Take available space */
+  max-width: 70%; /* Restrict image container size */
   transition: transform 0.5s ease, filter 0.5s ease; /* Smooth hover effects */
 }
 
 /* Image styling */
-.about-image img {
+.accordion-image img {
   width: 100%; /* Responsive image */
-  height: fit-content; /* Maintain aspect ratio */
-  max-width: 500px; /* Limit maximum width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Limit maximum width */
   border-radius: 1rem; /* Rounded corners */
 }
 
 /* Hover effect on image */
-.about-image:hover {
-  transform: scale(1.02); /* Slight zoom */
-  filter: drop-shadow(0 0 15px rgba(0, 255, 153, 0.219)); /* Soft glow */
+.accordion-image:hover {
+  transform: scale(1.05); /* Slight zoom */
+  filter: drop-shadow(0 0 20px rgba(0, 255, 153, 0.219)); /* Soft glow */
+}
+
+/* Text container */
+.accordion-text {
+  flex: 1; /* Take available space */
+  padding: 1rem 2rem; /* Inner spacing */
 }
 
 /* Responsive styles for small screens (below 768px width) */
 @media (max-width: 768px) {
-  .about-card {
+  .accordion-card {
     flex-direction: column-reverse; /* Stack vertically on smaller devices */
     padding-left: 2rem;
     padding-right: 2rem;
@@ -92,15 +94,15 @@
     text-align: center; /* Center text for better mobile appearance */
   }
 
-  .about-text h2 {
+  .accordion-text h2 {
     font-size: 2rem; /* Smaller heading for mobile */
   }
 
-  .about-text p {
+  .accordion-text p {
     font-size: 1rem; /* Smaller paragraph text */
   }
 
-  .about-image img {
+  .accordion-image img {
     max-width: 120%; /* Allow image to be slightly larger than container */
   }
 }
@@ -117,8 +119,50 @@
 
 /* Responsive styles for medium and larger screens (768px and above) */
 @media (min-width: 768px) {
-  .about-card {
+  .accordion-card {
     flex-direction: row-reverse; /* Image on left, text on right for desktop */
     padding: 4rem; /* More spacious padding for large screens */
   }
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: center;
+  background: 0 0 30px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #00ccff, #00ff99, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s infinite ease-in-out;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.accordion-content p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.accordion-header:hover{
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+  transition: filter 0.3s ease;
 }
