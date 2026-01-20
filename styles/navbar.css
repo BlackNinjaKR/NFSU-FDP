@@ -72,13 +72,26 @@
   height: 60px;
   width: auto;
   transition: transform 0.5s ease;
-  padding-left: 15px;
+  padding-left: 10px;
   padding-right: 15px;
 }
 
 /* === Hover Animation for Logo === */
 .navbar-logo-img:hover {
-  transform: scale(1.1);/* rotate(1deg); /* Slight zoom and rotation */
+  transform: scale(1.05);/* rotate(1deg); /* Slight zoom and rotation */
   filter: drop-shadow(0 0 5px #00ffff); /* Glow effect */
   transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* === Responsive Styles for Smaller Screens === */
+/* Hide the menu */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu {
+    display: none; /* Hide menu on small screens */
+  }
 }
