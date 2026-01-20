@@ -50,7 +50,7 @@
 .about-text p {
   font-size: 1.25rem; /* Slightly larger than normal text */
   color: #ffffff; /* White color for readability */
-  text-align: left; /* Align left for readability */
+  text-align: justify; /* Align left for readability */
   margin-bottom: 1rem; /* Space below paragraph */
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6; /* Improved line spacing for readability */
