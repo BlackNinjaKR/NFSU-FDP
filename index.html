@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/mission.css">
     <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/tab.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Links to the external CSS file that defines styles for background, loader, etc. -->
 
@@ -127,29 +128,30 @@
     </div>
 </section>
 
-<section id="mission">
-    <h2 class="mission-heading">About NFSU</h2>
-</section>
+
 <section class="about-section" id="about">
     <div class="about-card">
-        <div class="about-text">
-        <!-- Supporting illustration to enhance understanding -->
-        <div class="about-image">
-            <img src="assets/NFSU-Guwhatai-Campus.png" alt="NFSU Guwahati Campus" class="about-illustration" />
-        </div>
-            <p>
-                NFSU-Guwahati Campus is the 9th Campus of NFSU established in India and the main campus in northeast India, and its transit campus was inaugurated by the Honorable Home Minister of India on 25th May 2023 at Guwahati, Assam. The campus in engaged in imparting high-quality education and research in Forensic and allied sciences and is ready to provide training and consultancy services to law enforcement agencies and similar organizations from both public and private sectors. One of the major objectives of NFSU Guwahati campus is to promote Forensic Science education in north-east India, produce scientifically and technically sound Forensic experts through education, skill development and training and strengthen the criminal justice delivery system. The campus imparts training to professionals in diverse area of forensic sciences (Crime Scene Management, DNA Forensics, Analysis of Narcotic Drugs and Psychotropic Substances, Ballistics Studies and Post Blast Investigations, Forensic Document Examination, Forensic Psychology, Cyber Security and Digital Forensics) from government and private organization from East and North East Indian states as well as from neighboring countries.
-            </p>
+      <div class="tabs-card" aria-label="About tabs">
+        <div class="tabs-header" role="tablist">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-target="tab-overview">About NFSU</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-facilities">About SCSDF</button>
         </div>
 
-    </div>
-</section>
-<section id="mission">
-    <h2 class="mission-heading">About SCSDF</h2>
-</section>
-<section class="about-section" id="SCSDF">
-    <div class="about-card">
-        <div class="about-text">
+        <div class="tabs-content">
+          <div id="tab-overview" class="tab-panel" role="tabpanel">
+            <div class="about-text">
+              <!-- Supporting illustration to enhance understanding -->
+              <div class="about-image">
+                  <img src="assets/NFSU-Guwhatai-Campus.png" alt="NFSU Guwahati Campus" class="about-illustration" />
+              </div>
+                  <p>
+                      NFSU-Guwahati Campus is the 9th Campus of NFSU established in India and the main campus in northeast India, and its transit campus was inaugurated by the Honorable Home Minister of India on 25th May 2023 at Guwahati, Assam. The campus in engaged in imparting high-quality education and research in Forensic and allied sciences and is ready to provide training and consultancy services to law enforcement agencies and similar organizations from both public and private sectors. One of the major objectives of NFSU Guwahati campus is to promote Forensic Science education in north-east India, produce scientifically and technically sound Forensic experts through education, skill development and training and strengthen the criminal justice delivery system. The campus imparts training to professionals in diverse area of forensic sciences (Crime Scene Management, DNA Forensics, Analysis of Narcotic Drugs and Psychotropic Substances, Ballistics Studies and Post Blast Investigations, Forensic Document Examination, Forensic Psychology, Cyber Security and Digital Forensics) from government and private organization from East and North East Indian states as well as from neighboring countries.
+                  </p>
+              </div>
+          </div>
+
+          <div id="tab-facilities" class="tab-panel" role="tabpanel" hidden>
+            <div class="about-text">
         <!-- Supporting illustration to enhance understanding -->
         <div class="about-image">
             <img src="assets/cybersecurity.png" alt="School of Cybersecurity and Digital Forensics" class="SCSDF-illustration" />
@@ -168,10 +170,11 @@
 
 
         </div>
-
+          </div>
+        </div>
+      </div>
     </div>
 </section>
-
 
 <section id="mission">
     <h2 class="mission-heading">Schedule</h2>
@@ -481,7 +484,7 @@
 
 <!-- Enables team carousel behavior (likely handles left/right scroll) -->
 <script src="scripts/team.js"></script>
-
+<script src="scripts/tab.js"></script>
 <!-- Swiper.js library: Enables slider/carousel functionality -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- Duplicate — optional to keep if needed for compatibility -->
