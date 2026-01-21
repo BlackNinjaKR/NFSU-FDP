@@ -32,6 +32,8 @@
   background: linear-gradient(90deg, #00ff99, #00ccff, #00ff99); /* Color-changing gradient */
   background-size: 200% auto; /* Double width to animate */
   -webkit-background-clip: text; /* Clip background to text (Safari/Chrome) */
+  background-clip: text; /* Standard property for compatibility */
+  color: #00ff99; /* Fallback color for browsers that don't support background-clip:text */
   -webkit-text-fill-color: transparent; /* Make text fill transparent so gradient shows */
   position: relative;
   animation: shimmer 4s infinite ease-in-out; /* Infinite shimmer animation */
@@ -132,14 +134,28 @@
   font-size: 2.2rem;
   font-weight: 500;
   padding: 1rem 0;
-  background: linear-gradient(90deg, #00ccff, #00ff99, #00ccff);
+  color: #00ff99; /* fallback */
+  /* Glassy translucent fill */
+  background-color: rgba(116, 116, 116, 0.531);
+  border: 1px solid rgba(0, 255, 153, 0.12);
+  border-radius: 8px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(60, 60, 60, 0.45), inset 0 1px 0 rgba(124, 124, 124, 0.03);
+  transition: background-color 0.25s ease, transform 0.15s ease, box-shadow 0.15s ease;
+
+  /* Gradient text (kept clipped to text so the button background remains translucent) */
+  background-image: linear-gradient(90deg, #00ccff, #00ff99, #00ccff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 4s infinite ease-in-out;
-  background-color: rgba(128, 128, 128, 0.12); /* slight grey translucent button */
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 8px;
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.accordion-header:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.55);
+  transform: translateY(-2px);
 }
 
 .accordion-content {
