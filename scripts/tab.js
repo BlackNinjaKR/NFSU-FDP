@@ -45,3 +45,50 @@
           if(btn){ btn.click(); }
         }
       })();
+
+        (function() {
+    const tabs = document.querySelectorAll('#schedule-tabs .tab-btn');
+    const panels = document.querySelectorAll('#schedule-tabs .tab-panel');
+
+    // Map tab panel ids to display dates
+    const dateMap = {
+      'schedule-day-1': '09th Feb, 2026',
+      'schedule-day-2': '10th Feb, 2026',
+      'schedule-day-3': '11th Feb, 2026',
+      'schedule-day-4': '12th Feb, 2026',
+      'schedule-day-5': '13th Feb, 2026'
+    };
+
+    // store original labels so we can revert inactive tabs
+    tabs.forEach((b, i) => {
+      b.dataset.originalLabel = b.textContent.trim();
+    });
+
+    function activateTab(btn) {
+      tabs.forEach(b => {
+        const isActive = b === btn;
+        if (isActive) {
+          const mapped = dateMap[b.getAttribute('data-target')] || b.dataset.originalLabel;
+          b.textContent = mapped;
+          b.classList.add('active');
+          b.setAttribute('aria-selected', 'true');
+        } else {
+          b.textContent = b.dataset.originalLabel;
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        }
+      });
+
+      panels.forEach(p => {
+        p.hidden = p.id !== btn.getAttribute('data-target');
+      });
+    }
+
+    tabs.forEach(btn => {
+      btn.addEventListener('click', () => activateTab(btn));
+    });
+
+    // Initialize according to current active button (or first)
+    const initial = document.querySelector('#schedule-tabs .tab-btn.active') || tabs[0];
+    if (initial) activateTab(initial);
+  })();

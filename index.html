@@ -129,12 +129,15 @@
 </section>
 
 
+<section id="mission">
+    <h2 class="mission-heading">About</h2>
+</section>
 <section class="about-section" id="about">
     <div class="about-card">
       <div class="tabs-card" aria-label="About tabs">
         <div class="tabs-header" role="tablist">
-          <button class="tab-btn active" role="tab" aria-selected="true" data-target="tab-overview">About NFSU</button>
-          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-facilities">About SCSDF</button>
+          <button class="tab-btn active" role="tab" aria-selected="true" data-target="tab-overview">NFSU</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="tab-facilities">SCSDF</button>
         </div>
 
         <div class="tabs-content">
@@ -180,125 +183,278 @@
     <h2 class="mission-heading">Schedule</h2>
 </section>
 
-<section class="accordion-section" id="accordion">
-    <div class="accordion-card">
-        <div class="accordion">
+<section class="about-section" id="schedule-tabs">
+  <div class="about-card">
+    <div class="tabs-card" aria-label="Schedule tabs">
+      <div class="tabs-header" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-target="schedule-day-1">Monday</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-2">Tuesday</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-3">Wednesday</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-4">Thursday</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-5">Friday</button>
+      </div>
 
-  <div class="accordion-item">
-    <button class="accordion-header">Day 1: Monday (9/02/2026)</button>
-    <div class="accordion-content">
-  <table class="schedule-table">
-    <thead>
-      <tr>
-        <th>Time</th>
-        <th>Session</th>
-        <th>Speaker</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>10:30 AM – 11:45 AM</td>
-        <td>NFSU Briefing and ISEA Briefing</td>
-        <td>Prof. Dr. Parag H. Rughani</td>
-      </tr>
-      <tr class="break-row">
-        <td>11:45 AM – 12:00 PM</td>
-        <td>Tea Break</td>
-        <td>—</td>
-      </tr>
-      <tr>
-        <td>12:00 PM – 01:15 PM</td>
-        <td>Introduction to Malware and its Types</td>
-        <td>Prof. Dr. Parag H. Rughani</td>
-      </tr>
-      <tr class="break-row">
-        <td>01:15 PM – 02:15 PM</td>
-        <td>Lunch Break</td>
-        <td>—</td>
-      </tr>
-      <tr>
-        <td>02:15 PM – 03:30 PM</td>
-        <td>Introduction to Malware and its Types</td>
-        <td>Prof. Dr. Parag H. Rughani</td>
-      </tr>
-      <tr class="break-row">
-        <td>03:30 PM – 03:45 PM</td>
-        <td>Tea Break</td>
-        <td>—</td>
-      </tr>
-      <tr>
-        <td>03:45 PM – 04:45 PM</td>
-        <td>Introduction to Malware and its Types</td>
-        <td>Prof. Dr. Parag H. Rughani</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+      <div class="tabs-content">
+        <div id="schedule-day-1" class="tab-panel" role="tabpanel">
+          <div class="about-text">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                  <th>Speaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:30 AM – 11:45 AM</td>
+                  <td>NFSU Briefing and ISEA Briefing</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>11:45 AM – 12:00 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM – 01:15 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Phani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>01:15 PM – 02:15 PM</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>02:15 PM – 03:30 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>03:30 PM – 03:45 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>03:45 PM – 04:45 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-  </div>
+        <div id="schedule-day-2" class="tab-panel" role="tabpanel" hidden>
+          <div class="about-text">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                  <th>Speaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:30 AM – 11:45 AM</td>
+                  <td>NFSU Briefing and ISEA Briefing</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>11:45 AM – 12:00 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM – 01:15 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>01:15 PM – 02:15 PM</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>02:15 PM – 03:30 PM</td>
+                  <td>Introre and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>03:30 PM – 03:45 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>03:45 PM – 04:45 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-  <div class="accordion-item">
-    <button class="accordion-header">Day 2: Tuesday (10/02/2026)</button>
-    <div class="accordion-content">
-      <p>
-        Window System artifacts for data analysis and recovery in digital forensics
-        <br><br>
-        Data Science
-        <br><br>
-        Cyber Security
-        <br><br>
-        Cyber Security
-      </p>
+        <div id="schedule-day-3" class="tab-panel" role="tabpanel" hidden>
+          <div class="about-text">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                  <th>Speaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:30 AM – 11:45 AM</td>
+                  <td>NFSU Briefing and ISEA Briefing</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>11:45 AM – 12:00 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM – 01:15 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>01:15 PM – 02:15 PM</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>02:15 PM – 03:30 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>03:30 PM – 03:45 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>03:45 PM – 04:45 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="schedule-day-4" class="tab-panel" role="tabpanel" hidden>
+          <div class="about-text">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                  <th>Speaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:30 AM – 11:45 AM</td>
+                  <td>NFSU Briefing and ISEA Briefing</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>11:45 AM – 12:00 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM – 01:15 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>01:15 PM – 02:15 PM</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>02:15 PM – 03:30 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>03:30 PM – 03:45 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>03:45 PM – 04:45 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="schedule-day-5" class="tab-panel" role="tabpanel" hidden>
+          <div class="about-text">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Session</th>
+                  <th>Speaker</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10:30 AM – 11:45 AM</td>
+                  <td>NFSU Briefing and ISEA Briefing</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>11:45 AM – 12:00 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM – 01:15 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>01:15 PM – 02:15 PM</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>02:15 PM – 03:30 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+                <tr class="break-row">
+                  <td>03:30 PM – 03:45 PM</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
+                </tr>
+                <tr>
+                  <td>03:45 PM – 04:45 PM</td>
+                  <td>Introduction to Malware and its Types</td>
+                  <td>Prof. Dr. Parag H. Rughani</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-
-  <div class="accordion-item">
-    <button class="accordion-header">Day 3: Wednesday (11/02/2026)</button>
-    <div class="accordion-content">
-      <p>
-        Window System artifacts for data analysis and recovery in digital forensics
-        <br><br>
-        Data Science
-        <br><br>
-        Cyber Security
-        <br><br>
-        Cyber Security
-      </p>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <button class="accordion-header">Day 4: Thursday (12/02/2026)</button>
-    <div class="accordion-content">
-      <p>
-        Window System artifacts for data analysis and recovery in digital forensics
-        <br><br>
-        Data Science
-        <br><br>
-        Cyber Security
-        <br><br>
-        Cyber Security
-      </p>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <button class="accordion-header">Day 5: Wednesday (13/02/2026)</button>
-    <div class="accordion-content">
-      <p>
-        Window System artifacts for data analysis and recovery in digital forensics
-        <br><br>
-        Data Science
-        <br><br>
-        Cyber Security
-        <br><br>
-        Cyber Security
-      </p>
-    </div>
-  </div>
-
-</div>
-
-    </div>
 </section>
+
 
 
 <!-- ===============================
