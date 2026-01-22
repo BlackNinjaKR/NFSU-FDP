@@ -1,6 +1,6 @@
 (function(){
-        const buttons = document.querySelectorAll('.tab-btn');
-        const panels = document.querySelectorAll('.tab-panel');
+        const buttons = document.querySelectorAll('#about .about-tab-btn');
+        const panels = document.querySelectorAll('#about .about-tab-panel');
 
         function activateButton(btn){
           buttons.forEach(b=>{
