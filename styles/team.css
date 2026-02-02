@@ -235,14 +235,14 @@
 ================================== */
 @media (max-width: 768px) {
   .team-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .card {
     min-width: 100%;
     max-width: 100%;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
   }
 
