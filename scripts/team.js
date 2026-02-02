@@ -74,7 +74,7 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.card').forEach(setupCardAnimation);
 
 
-const card_no = 5
+const card_no = 12
 // Scroll the carousel left or right, with infinite clone support
 function scrollCarousel(direction) {
   const scrollAmount = 352; // Width of card + margin/padding/gap
