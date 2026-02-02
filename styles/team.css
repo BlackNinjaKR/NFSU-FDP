@@ -268,3 +268,52 @@
   cursor: grabbing;
   user-select: none;
 }
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 90%;
+    width: 90%;
+    scroll-snap-align: center;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 2rem 1rem;
+  }
+
+  .carousel-container {
+    padding: 0;
+  }
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .description {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .description::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer-text,
+  .team-heading {
+    animation: none;
+  }
+}
