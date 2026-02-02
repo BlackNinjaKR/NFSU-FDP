@@ -166,17 +166,120 @@
   <div class="about-card">
     <div class="tabs-card" aria-label="Schedule tabs">
       <div class="tabs-header" role="tablist">
-        <button class="tab-btn active" role="tab" aria-selected="true" data-target="schedule-day-1">Monday</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-2">Tuesday</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-3">Wednesday</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-4">Thursday</button>
-        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-5">Friday</button>
+        <button class="tab-btn active" role="tab" aria-selected="true" data-target="schedule-day-1">Mon</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-2">Tue</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-3">Wed</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-4">Thu</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-target="schedule-day-5">Fri</button>
       </div>
 
       <div class="tabs-content">
         <div id="schedule-day-1" class="tab-panel" role="tabpanel">
           <div class="about-text">
-            <table class="schedule-table">
+            <div class="schedule-desktop">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10:30 AM – 11:45 AM</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr class="break-row">
+                    <td>11:45 AM – 12:00 PM</td>
+                    <td>Tea Break</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>12:00 PM – 01:15 PM</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr class="break-row">
+                    <td>01:15 PM – 02:15 PM</td>
+                    <td>Lunch Break</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>02:15 PM – 03:30 PM</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                  <tr class="break-row">
+                    <td>03:30 PM – 03:45 PM</td>
+                    <td>Tea Break</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>03:45 PM – 04:45 PM</td>
+                    <td>—</td>
+                    <td>—</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+              <div class="schedule-mobile">
+                <div class="timeline-slot">
+                  <div class="time">10:30 AM – 11:45 AM</div>
+                  <div class="content">
+                    <div class="session">Test</div>
+                    <div class="speaker">Test Speaker</div>
+                  </div>
+                </div>
+
+                <div class="timeline-slot break">
+                  <div class="time">11:45 AM – 12:00 PM</div>
+                  <div class="content">☕ Tea Break</div>
+                </div>
+
+                <div class="timeline-slot">
+                  <div class="time">12:00 PM – 01:15 PM</div>
+                  <div class="content">
+                    <div class="session">—</div>
+                    <div class="speaker">—</div>
+                  </div>
+                </div>
+
+                <div class="timeline-slot break">
+                  <div class="time">01:15 PM – 02:15 PM</div>
+                  <div class="content">🍽 Lunch Break</div>
+                </div>
+
+                <div class="timeline-slot">
+                  <div class="time">02:15 PM – 03:30 PM</div>
+                  <div class="content">
+                    <div class="session">—</div>
+                    <div class="speaker">—</div>
+                  </div>
+                </div>
+
+                <div class="timeline-slot break">
+                  <div class="time">03:30 PM – 03:45 PM</div>
+                  <div class="content">☕ Tea Break</div>
+                </div>
+
+                <div class="timeline-slot">
+                  <div class="time">03:45 PM – 04:45 PM</div>
+                  <div class="content">
+                    <div class="session">—</div>
+                    <div class="speaker">—</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        <div id="schedule-day-2" class="tab-panel" role="tabpanel" hidden>
+          <div class="about-text">
+            <div class="schedule-desktop">
+              <table class="schedule-table">
               <thead>
                 <tr>
                   <th>Time</th>
@@ -187,98 +290,100 @@
               <tbody>
                 <tr>
                   <td>10:30 AM – 11:45 AM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>11:45 AM – 12:00 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>12:00 PM – 01:15 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>01:15 PM – 02:15 PM</td>
-                  <td data-label="Session">Lunch Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>02:15 PM – 03:30 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>03:30 PM – 03:45 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>03:45 PM – 04:45 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
+            </div>
+            <div class="schedule-mobile">
 
-        <div id="schedule-day-2" class="tab-panel" role="tabpanel" hidden>
-          <div class="about-text">
-            <table class="schedule-table">
-              <thead>
-                <tr>
-                  <th>Time</th>
-                  <th data-label="Session">Session</th>
-                  <th data-label="Speakereth">Speaker</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>10:30 AM – 11:45 AM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr class="break-row">
-                  <td>11:45 AM – 12:00 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM – 01:15 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr class="break-row">
-                  <td>01:15 PM – 02:15 PM</td>
-                  <td data-label="Session">Lunch Break</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr>
-                  <td>02:15 PM – 03:30 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr class="break-row">
-                  <td>03:30 PM – 03:45 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-                <tr>
-                  <td>03:45 PM – 04:45 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
-                </tr>
-              </tbody>
-            </table>
+  <div class="timeline-slot">
+    <div class="time">10:30 AM – 11:45 AM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">11:45 AM – 12:00 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">12:00 PM – 01:15 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">01:15 PM – 02:15 PM</div>
+    <div class="content">🍽 Lunch Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">02:15 PM – 03:30 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">03:30 PM – 03:45 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">03:45 PM – 04:45 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+</div>
+
           </div>
         </div>
 
         <div id="schedule-day-3" class="tab-panel" role="tabpanel" hidden>
           <div class="about-text">
-            <table class="schedule-table">
+            <div class="schedule-desktop">
+              <table class="schedule-table">
               <thead>
                 <tr>
                   <th>Time</th>
@@ -289,46 +394,99 @@
               <tbody>
                 <tr>
                   <td>10:30 AM – 11:45 AM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>11:45 AM – 12:00 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>12:00 PM – 01:15 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>01:15 PM – 02:15 PM</td>
-                  <td data-label="Session">Lunch Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>02:15 PM – 03:30 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>03:30 PM – 03:45 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>03:45 PM – 04:45 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
               </tbody>
             </table>
+            </div>
+            <div class="schedule-mobile">
+
+  <div class="timeline-slot">
+    <div class="time">10:30 AM – 11:45 AM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">11:45 AM – 12:00 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">12:00 PM – 01:15 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">01:15 PM – 02:15 PM</div>
+    <div class="content">🍽 Lunch Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">02:15 PM – 03:30 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">03:30 PM – 03:45 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">03:45 PM – 04:45 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+</div>
+
           </div>
         </div>
 
         <div id="schedule-day-4" class="tab-panel" role="tabpanel" hidden>
           <div class="about-text">
+            <div class="schedule-desktop">
             <table class="schedule-table">
               <thead>
                 <tr>
@@ -340,46 +498,99 @@
               <tbody>
                 <tr>
                   <td>10:30 AM – 11:45 AM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>11:45 AM – 12:00 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>12:00 PM – 01:15 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>01:15 PM – 02:15 PM</td>
-                  <td data-label="Session">Lunch Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>02:15 PM – 03:30 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>03:30 PM – 03:45 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>03:45 PM – 04:45 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
               </tbody>
             </table>
+            </div>
+            <div class="schedule-mobile">
+
+  <div class="timeline-slot">
+    <div class="time">10:30 AM – 11:45 AM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">11:45 AM – 12:00 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">12:00 PM – 01:15 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">01:15 PM – 02:15 PM</div>
+    <div class="content">🍽 Lunch Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">02:15 PM – 03:30 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">03:30 PM – 03:45 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">03:45 PM – 04:45 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+</div>
+
           </div>
         </div>
 
         <div id="schedule-day-5" class="tab-panel" role="tabpanel" hidden>
           <div class="about-text">
+            <div class="schedule-desktop">
             <table class="schedule-table">
               <thead>
                 <tr>
@@ -391,41 +602,93 @@
               <tbody>
                 <tr>
                   <td>10:30 AM – 11:45 AM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>11:45 AM – 12:00 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>12:00 PM – 01:15 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>01:15 PM – 02:15 PM</td>
-                  <td data-label="Session">Lunch Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Lunch Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>02:15 PM – 03:30 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
                 <tr class="break-row">
                   <td>03:30 PM – 03:45 PM</td>
-                  <td data-label="Session">Tea Break</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>Tea Break</td>
+                  <td>—</td>
                 </tr>
                 <tr>
                   <td>03:45 PM – 04:45 PM</td>
-                  <td data-label="Session">—</td>
-                  <td data-label="Speakereth">—</td>
+                  <td>—</td>
+                  <td>—</td>
                 </tr>
               </tbody>
             </table>
+            </div>
+            <div class="schedule-mobile">
+
+  <div class="timeline-slot">
+    <div class="time">10:30 AM – 11:45 AM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">11:45 AM – 12:00 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">12:00 PM – 01:15 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">01:15 PM – 02:15 PM</div>
+    <div class="content">🍽 Lunch Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">02:15 PM – 03:30 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+  <div class="timeline-slot break">
+    <div class="time">03:30 PM – 03:45 PM</div>
+    <div class="content">☕ Tea Break</div>
+  </div>
+
+  <div class="timeline-slot">
+    <div class="time">03:45 PM – 04:45 PM</div>
+    <div class="content">
+      <div class="session">—</div>
+      <div class="speaker">—</div>
+    </div>
+  </div>
+
+</div>
+
           </div>
         </div>
 

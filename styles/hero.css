@@ -216,48 +216,47 @@
    =============================== */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 6rem 2rem 2rem 0rem; /* More top padding */
+    padding: 6rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-content {
-    flex-direction: column-reverse; /* Logo on top, text below */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
-  .text-content,
-  .text-headsub-content {
+  .text-content {
     max-width: 100%;
-  }
-
-  .logo-content {
-    max-width: 100%;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-logo-text {
-    align-items: center; /* Center text under logo */
-    text-align: center;
     margin-bottom: 1.5rem;
   }
 
   .logo-text {
-    font-size: 3rem; /* Smaller for mobile */
-  }
-
-  .tagline {
-    font-size: 0.1rem; /* Very small text (adjust as needed) */
-    margin-top: -0.5rem;
-    margin-left: 0.2rem;
+    font-size: 2.2rem;
   }
 
   .subheading {
-    text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
-  .hero-button {
-    display: block;
-    margin: 1.5rem auto 0; /* Center button on mobile */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .h1
+  {
+    text-align: center;
   }
 }

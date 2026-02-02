@@ -82,14 +82,18 @@
 
 /* Responsive styles for small screens (below 768px width) */
 @media (max-width: 768px) {
+  .about-section {
+    padding: 1.5rem; /* Reduced padding for small screens */
+  }
   .about-card {
     flex-direction: column-reverse; /* Stack vertically on smaller devices */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 3rem;
     padding-bottom: 1rem;
     align-items: center;
     text-align: center; /* Center text for better mobile appearance */
+    border-radius: 1.5rem;
   }
 
   .about-text h2 {
